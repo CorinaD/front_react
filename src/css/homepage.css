@@ -1,0 +1,26 @@
+.h1 {
+    letter-spacing: 3px;
+  }
+  
+h5.aboutTitle {
+    letter-spacing: -2px;
+  }
+
+p.big {
+    line-height: 2;
+  }
+
+.about {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+.title {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.welcomeMessage {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
