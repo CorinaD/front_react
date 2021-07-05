@@ -8,6 +8,7 @@ export default class SignUp extends Component {
             firstName: '',
             lastName: '',
             email: '',
+            phone: '',
             password: ''
         };
     }
@@ -29,6 +30,7 @@ export default class SignUp extends Component {
             console.log(response.statusText);
             console.log(response.headers);
             console.log(response.config);
+            window.location = "/sign-in";
         })
         .catch ( error => {
             console.log(error);
@@ -36,7 +38,7 @@ export default class SignUp extends Component {
     }  
 
     render() {
-        const {firstName, lastName, email, password} = this.state;
+        const {firstName, lastName, email, phone, password} = this.state;
         return (
             <div className="auth-wrapper "> 
             <form  className="auth-inner"  onSubmit={this.onSubmitHandler}>
@@ -55,6 +57,11 @@ export default class SignUp extends Component {
                 <div className="form-group">
                     <label>Email address</label>
                     <input type="email" className="form-control" placeholder="Enter email" name="email"  value = {email} onChange={this.changeHandler}/>
+                </div>
+                
+                <div className="form-group">
+                    <label>Phone number</label>
+                    <input type="tel" className="form-control" placeholder="Phone number" name="phone"  value = {phone} onChange={this.changeHandler}/>
                 </div>
 
                 <div className="form-group">

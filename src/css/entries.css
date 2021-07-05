@@ -1,0 +1,12 @@
+.table-bordered {
+    width: 100%;
+  }
+
+.table-container{
+    padding-top: 40px;
+    padding-bottom: 20px; 
+}
+
+h4.spacing {
+    padding-bottom: 20px; 
+  }
