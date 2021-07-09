@@ -7,7 +7,8 @@ function Logout()  {
         localStorage.setItem('isLogged', 'false');
         
 
-    }   
+    }
+       
     return (
         window.location = "/home"
     )    
